@@ -1,8 +1,8 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 function Contato() {
-  const phoneNumber = '554899675924'; // Número de telefone para o WhatsApp
-  const emailAddress = 'filipesoaresilva@gmail.com'; // Endereço de email
+  const phoneNumber = '5548996755924'; 
+  const emailAddress = 'filipesoaresilva@gmail.com';
 
   const openWhatsApp = () => {
     const message = 'Olá, estou entrando em contato pelo WhatsApp';
