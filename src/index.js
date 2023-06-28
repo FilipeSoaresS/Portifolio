@@ -21,6 +21,7 @@ function Home() {
   const handlePhotoClick = () => {
     setShowPhoto(true);
     setShowText(false);
+    handleButtonClick('Sobre');
   };
 
   const handleButtonClick = (buttonName) => {
