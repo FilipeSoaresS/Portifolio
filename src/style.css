@@ -15,16 +15,15 @@
 }
 
 .displayText.show {
-  animation: fadeIn 3.5s ease; 
+  animation: fadeIn 5s ease-in-out; 
   opacity: 1;
-
 }
 
 .displayText:hover{
   transition: all 1.5s ease;
   border-color: #d8d8d8;
   background-color: #9a9a9a;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .hide {
@@ -74,7 +73,10 @@ h1{
 
 .contato{
   font-size: 15px;
-  padding: 2px;
+  padding: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bolder;
 }
 
 .icone-container{
@@ -86,7 +88,7 @@ h1{
 
 .icones{
   padding: 5px;
-  font-size: 45px;
+  font-size: 40px;
   color: rgb(190, 190, 190);
 }
 
