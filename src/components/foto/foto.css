@@ -14,7 +14,7 @@
 }
 
 .click-text{
-    margin: 32% auto 0 10.5%;
+    margin: 36% auto 0 10.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
 
 .foto {
     max-width: 25%;
-    margin: 4% 0 0 5%;
+    margin: 8% 0 0 5%;
     border-radius: 50%;
     border: 0.5px solid #6a6a6a;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
@@ -64,8 +64,8 @@
 
     .click-text{
         position: absolute;
-        top: 50%;
-        margin-top: 35%;
+        top: 9%;
+        margin-top: 0;
         margin-left: 27%;
         transform: translate(-30%, -30%);
     }
