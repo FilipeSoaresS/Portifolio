@@ -89,6 +89,7 @@ h1{
   padding: 5px;
   font-size: 40px;
   color: rgb(190, 190, 190);
+  cursor: pointer;
 }
 
 .icones:hover{
