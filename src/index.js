@@ -17,6 +17,13 @@ function Home() {
   const [showPhoto, setShowPhoto] = useState(false);
   const [buttonName, setButtonName] = useState('');
 
+  const components = {
+    Sobre: <Sobre/>,
+    Projetos: <Projetos/>,
+    Contato: <Contato/>
+  };
+
+  const buttons = ['Sobre', 'Projetos', 'Contato'];
 
   const handlePhotoClick = () => {
     setShowPhoto(true);
@@ -27,27 +34,10 @@ function Home() {
   const handleButtonClick = (buttonName) => {
     setButtonName(buttonName);
 
-    if (buttonName === 'Sobre') {
-        
-      setDisplayText(
-        <Sobre/>
-      );
+    setDisplayText(components[buttonName]);
 
-      setShowText(true);
-    } else if (buttonName === 'Projetos') {
-      setDisplayText(
-        <Projetos/>
-      );
-      setShowText(true);
-    } else if (buttonName === 'Contato') {
-      setDisplayText(
-        <Contato/>
-      );
-      setShowText(true);
-    } else {
-      setDisplayText('');
-      setShowText(false);
-    }
+    setShowText(true);
+
     setAnimationKey(animationKey + 1);
   };
 
@@ -64,9 +54,9 @@ function Home() {
           <div>
             <div className={`button-container ${showText ? 'show' : 'fade'}`}>
               <Button>
-                <button className={buttonName === 'Sobre' ? 'button button-selected' : 'button'} onClick={() => handleButtonClick('Sobre')}>Sobre</button>
-                <button className={buttonName === 'Projetos' ? 'button button-selected' : 'button'} onClick={() => handleButtonClick('Projetos')}>Projetos</button>
-                <button className={buttonName === 'Contato' ? 'button button-selected' : 'button'} onClick={() => handleButtonClick('Contato')}>Contato</button>
+                {buttons.map(name => (
+                  <button className={buttonName === name ? 'button button-selected' : 'button'} onClick={() => handleButtonClick(name)}>{name}</button>
+                ))}
               </Button>
             </div>
             <div key={animationKey} className={`displayText ${showText ? 'show' : 'hide'}`}>{showText && displayText}</div>
