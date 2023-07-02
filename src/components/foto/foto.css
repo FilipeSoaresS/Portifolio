@@ -40,6 +40,11 @@
     cursor: pointer;
 }
 
+.foto:hover {
+    transition: all 2s ease;
+    transform: scale(1.05);
+}
+
 @media (max-width: 570px) {
 
     .foto-container{
