@@ -19,13 +19,13 @@ function Contato() {
   return (
     <div>
       <h1>Fale comigo:</h1>
-      <p className='contato' onClick={sendEmail}>
+      <p className='contato'>
         Email: filipesoaresilva@gmail.com
-        <FaEnvelope className="icones" />
+        <FaEnvelope className="icones"  onClick={sendEmail} />
       </p>
-      <p className='contato' onClick={openWhatsApp}>
+      <p className='contato'>
         Telefone/WhatsApp: 48-996755924
-        <FaWhatsapp className="icones" />
+        <FaWhatsapp className="icones" onClick={openWhatsApp}/>
         
       </p>
       <p>
