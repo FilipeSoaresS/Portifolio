@@ -27,14 +27,13 @@
 }
 
 .hide {
-  display: none;
   opacity: 0;
 }
 
 
 h1{
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 25px;
   font-weight: bold;
 }
