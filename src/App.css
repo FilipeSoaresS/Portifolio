@@ -5,7 +5,7 @@
 
 body {
   overflow-y: hidden;
-  background: linear-gradient(to bottom, #656668, #1c1c1c);
+  background: #1c1c1c;
   min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
